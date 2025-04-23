@@ -118,8 +118,8 @@ nav ul {
 }
 .hero-section .rocket-icon {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #f2f2f2;
   border-radius: 50%;
   display: flex;
@@ -138,8 +138,8 @@ nav ul {
 }
 .hero-section .settings-icon {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #f2f2f2;
   border-radius: 50%;
   display: flex;
@@ -157,8 +157,8 @@ nav ul {
 }
 .hero-section .wallet-icon {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #f2f2f2;
   border-radius: 50%;
   display: flex;
@@ -190,7 +190,11 @@ nav ul {
 .circle-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(110, 193, 228, 0.2) 10%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(110, 193, 228, 0.2) 10%,
+    transparent 100%
+  );
   top: 45%;
   left: 70%;
   animation-duration: 10s;
@@ -199,7 +203,11 @@ nav ul {
 .circle-2 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(110, 193, 228, 0.15) 10%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(110, 193, 228, 0.15) 10%,
+    transparent 100%
+  );
   top: 45%;
   left: 70%;
   animation-delay: 0.3s;
@@ -208,7 +216,11 @@ nav ul {
 .circle-3 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(110, 193, 228, 0.1) 10%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(110, 193, 228, 0.1) 10%,
+    transparent 100%
+  );
   top: 45%;
   left: 70%;
   animation-delay: 0.6s;
@@ -217,7 +229,11 @@ nav ul {
 .circle-4 {
   width: 200px;
   height: 200px;
-  background:radial-gradient(circle, rgba(110, 193, 228, 0.08) 10%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(110, 193, 228, 0.08) 10%,
+    transparent 100%
+  );
   top: 45%;
   left: 70%;
   animation-delay: 0.9s;
@@ -233,7 +249,8 @@ nav ul {
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -251,7 +268,7 @@ nav ul {
   flex-wrap: wrap;
   text-align: center;
 }
-.company-services{
+.company-services {
   display: flex;
 }
 .services h1 {
@@ -266,41 +283,70 @@ nav ul {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   unicode-bidi: isolate;
+  color: #292929;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.service-para{
+  margin-right: 78px;
+  margin-left: 78px;
 }
 footer {
-  position: relative;
-  background-color: #000;
-}
-footer ul{
-justify-content: space-between;
-padding: 10px;
-}
-footer h4 {
+  background-color: rgb(27, 27, 27);
   color: white;
-  margin-left: 10px;
 }
-footer a {
-  text-decoration: none;
-  color: #DDD;
-  margin-left: 10px;
+footer h3 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 footer p{
-  color: #DDD;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  font-size: 13px;
 }
-footer a:hover{
-cursor: pointer;
-color: white;
+footer .end-box{
+  width: 100vw;
+  background-color: black;
+  height: 30px;
 }
-.company-services{
+footer a:hover {
+  cursor: pointer;
+  color: white;
+}
+.social-media-icons{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.fa {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  justify-content: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.company-services {
   justify-content: space-evenly;
   flex-wrap: wrap;
   display: flex;
   padding: 10px;
 }
-.service-cards{
+.service-cards {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,32 +359,31 @@ color: white;
   border-radius: 10px;
 }
 
-.service-cards .image{
-  border-top-right-radius:  10px;
-  border-top-left-radius:  10px;
+.service-cards .image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   width: 300px;
   height: 180px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
 
-.service-cards h2{
-color: #223645;
-font-family: "Inter", Sans-serif;
-font-size: 20px;
-font-weight: 600;
-text-align: left;
+.service-cards h2 {
+  color: #223645;
+  font-family: "Inter", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
 }
 
-.service-cards p{
-text-align: left;
-color: #7A7A7A;
-font-family: "Poppins", Sans-serif;
-font-size: 15px;
-font-weight: 400;
+.service-cards p {
+  text-align: left;
+  color: #7a7a7a;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
-.card-contents{
+.card-contents {
   padding: 15px;
   flex: 1;
 }
-
